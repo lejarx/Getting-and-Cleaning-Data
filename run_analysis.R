@@ -64,7 +64,7 @@ average.subject.activities <- aggregate.data.frame(data_final, list(data_final$S
 colnames(average.subject.activities)[1:2] <- c("Subject", "Activity_Label")
 # reorder output by Subject 
 average.subject.activities <- average.subject.activities[order(average.subject.activities$Subject),]
-# output to tab delimited txt file
+# output to tab delimited txt file and csv file
 write.csv(average.subject.activities, "averageSubjectActivities.txt",row.names=FALSE)
 write.csv(average.subject.activities, "averageSubjectActivities.csv",row.names=FALSE)
 library(dplyr)
