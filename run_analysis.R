@@ -53,9 +53,6 @@ data_final <- cbind(Y.subject_merged, X_merged)
 colnames(data_final)[1:2] <- c("Subject", "Activity_ID")
 head(data_final)
 
-# reorder data according to subject id and activity id
-data_final <- data_final[order(data_final$Subject, data_final$Activity_ID),]
-head(data_final)
 # create a data set with the average of 
 # each variable for each activity and each subject. 
 #--------------------------------------------------
@@ -65,6 +62,8 @@ head(data_final)
 #--------------------------------------------------
 average.subject.activities <- aggregate.data.frame(data_final, list(data_final$Subject, data_final$activity_label), mean)[, c(-3, -5)]
 colnames(average.subject.activities)[1:2] <- c("Subject", "Activity_Label")
+# reorder output by Subject 
+average.subject.activities <- average.subject.activities[order(average.subject.activities$Subject),]
 # output to tab delimited txt file
 write.table(average.subject.activities, "averageSubjectActivities.txt", sep="\t",row.names=FALSE)
 library(dplyr)
