@@ -33,7 +33,7 @@ Read features and activities:
 
 Use data from activity_labels.txt to match it with the Activity ID
 
-        data$Activity_label <- activity_labels
+          data$Activity_label <- activity_labels
 
 * <b>Step 4 - Creates a second, independent tidy data set with the average of each variable for each activity and each subject.</b>
 
