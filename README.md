@@ -4,17 +4,26 @@ Getting-and-Cleaning-Data : run_analysis
 ### Getting and Cleaning Data Project 
 
 * Step 1 - Read all data into memory for merging
-        # Read test data
-`./UCI HAR Dataset/test/subject_test.txt`
-`./UCI HAR Dataset/test/X_test.txt`
-`./UCI HAR Dataset/test/y_test.txt`      
-# Read training data
-`./UCI HAR Dataset/train/subject_train.txt`
-`./UCI HAR Dataset/train/X_train.txt`
-`./UCI HAR Dataset/train/y_train.txt`
-        # Read features and activities
-`./UCI HAR Dataset/activity_labels.txt`
-`./UCI HAR Dataset/features.txt`
+
+<b>Read test data</b>: 
+<ol>
+<li>./UCI HAR Dataset/test/subject_test.txt</li>
+<li>./UCI HAR Dataset/test/X_test.txt</li>
+<li>./UCI HAR Dataset/test/y_test.txt</li>
+</ol>
+
+<b>Read training data</b>: 
+<ol>
+<li>./UCI HAR Dataset/train/subject_train.txt</li>
+<li>./UCI HAR Dataset/train/X_train.txt</li>
+<li>./UCI HAR Dataset/train/y_train.txt</li>
+</ol>
+
+<b>Read features and activities</b>: 
+<ol>
+<li>./UCI HAR Dataset/activity_labels.txt</li>
+<li>./UCI HAR Dataset/features.txt</li>
+</ol>
 
 	
 * Step 2 - Extracts only the measurements on the mean and standard deviation for each measurement	
