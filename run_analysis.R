@@ -66,7 +66,7 @@ head(data_final)
 average.subject.activities <- aggregate.data.frame(data_final, list(data_final$Subject, data_final$activity_label), mean)[, c(-3, -5)]
 colnames(average.subject.activities)[1:2] <- c("Subject", "Activity_Label")
 # output to tab delimited txt file
-write.table(average.subject.activities, "averageSubjectActivities.txt", sep="\t")
+write.table(average.subject.activities, "averageSubjectActivities.txt", sep="\t",row.names=FALSE)
 library(dplyr)
 # create a wrapper on dataframe for clean viewing
 tbl_df(average.subject.activities)
