@@ -32,6 +32,7 @@ Read features and activities:
 * <b>Step 3 - Uses descriptive activity names to name the activities in the data set. Appropriately labels the data set with descriptive activity names:</b>
 
 Use data from activity_labels.txt to match it with the Activity ID
+
         `data$Activity_label <- activity_labels`
 
 * <b>Step 4 - Creates a second, independent tidy data set with the average of each variable for each activity and each subject.</b>
