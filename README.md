@@ -26,12 +26,11 @@ Read features and activities:
 </ol>
 
 	
-* <b>Step 2 - Extracts only the measurements on the mean and standard deviation for each measurement</b>	
+* <b>Step 2 - Extracts only the measurements on the mean and standard deviation for each measurement</b>
+
 		grep("mean\\()|std\\()", names(data))
 		
-* <b>Step 3 - Uses descriptive activity names to name the activities in the data set. Appropriately labels the data set with descriptive activity names:</b>
-
-Use data from activity_labels.txt to match it with the Activity ID
+* <b>Step 3 - Uses descriptive activity names to name the activities in the data set. Appropriately labels the data set with descriptive activity names:Use data from activity_labels.txt to match it with the Activity ID </b>
 
           data$Activity_label <- activity_labels
 
