@@ -42,4 +42,4 @@ Use data from activity_labels.txt to match it with the Activity ID
 * <b>Step 5 - Write result as tab delimited text file</b>
 
           write.table(data, "result.txt", sep="\t")
-### Example of output viewed in RStudio![result photo](output.png) 
+### Example of output viewed in Github![result photo](output.png) 
